@@ -155,6 +155,10 @@
             "source": "/handbook/people/hiring-process/hiring-process",
             "destination": "/handbook/people/hiring-process"
         },
+        {
+            "source": "/handbook/growth/sales/hogpatch",
+            "destination": "/handbook/people/hogpatch"
+        },
         { "source": "/docs/integrate/client/ios/index", "destination": "/docs/libraries/ios" },
         { "source": "/docs/integrate/client/ios", "destination": "/docs/libraries/ios" },
         { "source": "/docs/integrate/client/js/index", "destination": "/docs/libraries/js" },
@@ -311,6 +315,7 @@
         { "source": "/travismedia", "destination": "/?utm_source=travismedia&utm_campaign=travismedia" },
         { "source": "/viktor", "destination": "/?utm_source=viktor&utm_campaign=viktor" },
         { "source": "/starterstory", "destination": "/?utm_source=starterstory&utm_campaign=starterstory" },
+        { "source": "/jsmastery", "destination": "/?utm_source=jsmastery&utm_campaign=jsmastery" },
         { "source": "/docs/self-host/migrate-to-cloud", "destination": "/docs/migrate/migrate-to-cloud" },
         { "source": "/tutorials/categories/plugins", "destination": "/tutorials/categories/apps" },
         { "source": "/trial", "destination": "/pricing" },
@@ -630,6 +635,7 @@
         { "source": "/docs/experiments/manual", "destination": "/docs/experiments/installation" },
         { "source": "/docs/experiments/under-the-hood", "destination": "/docs/experiments/experiment-significance" },
         { "source": "/docs/experiments/significance", "destination": "/docs/experiments/experiment-significance" },
+        { "source": "/docs/experiments/statistics", "destination": "/docs/experiments/statistics-bayesian" },
         { "source": "/docs/session-replay/manual", "destination": "/docs/session-replay/installation" },
         { "source": "/docs/features/feature-flags", "destination": "/docs/feature-flags" },
         { "source": "/docs/user-guides/feature-flags", "destination": "/docs/feature-flags" },
@@ -661,6 +667,8 @@
         { "source": "/docs/integrate/browser-extension", "destination": "/docs/advanced/browser-extension" },
         { "source": "/docs/integrate/cdp", "destination": "/docs/advanced/cdp" },
         { "source": "/docs/integrate/proxy", "destination": "/docs/advanced/proxy" },
+        { "source": "/docs/advanced/proxy/managed-reverse-proxy", "destination": "/docs/advanced/proxy" },
+        { "source": "/docs/advanced/proxy/troubleshooting", "destination": "/docs/advanced/proxy/proxy-reference" },
         { "source": "/docs/integrate/badge", "destination": "/docs/contribute/badge" },
         { "source": "/docs/integrate/libraries", "destination": "/docs/libraries" },
         { "source": "/docs/data/notifications-and-alerts", "destination": "/docs/product-analytics/subscriptions" },
@@ -693,10 +701,10 @@
         { "source": "/ab-testing/features", "destination": "/experiments" },
         { "source": "/product-os/features", "destination": "/product-os" },
         { "source": "/docs/integrate/webhooks", "destination": "/docs/cdp/destinations/webhook" },
-        { "source": "/roadmap/changelog", "destination": "/changelog/2025" },
-        { "source": "/blog/posthog-changelog", "destination": "/changelog/2025" },
-        { "source": "/roadmap/changelog/2023", "destination": "/changelog/2025" },
-        { "source": "/changelog", "destination": "/changelog/2025" },
+        { "source": "/roadmap/changelog", "destination": "/changelog" },
+        { "source": "/blog/posthog-changelog", "destination": "/changelog" },
+        { "source": "/roadmap/changelog/2023", "destination": "/changelog" },
+        { "source": "/changelog/2025", "destination": "/changelog" },
         { "source": "/docs/integrate/webhooks", "destination": "/docs/cdp/destinations/webhook" },
         { "source": "/apps/advanced-geoip", "destination": "/cdp/geoip-enrichment" },
         { "source": "/cdp/advanced-geoip", "destination": "/cdp/geoip-enrichment" },
@@ -907,6 +915,10 @@
         {
             "source": "/docs/error-tracking/filter-and-search-issues",
             "destination": "/docs/error-tracking/managing-issues"
+        },
+        {
+            "source": "/docs/error-tracking/external-tracking",
+            "destination": "/docs/error-tracking/integrations"
         },
         { "source": "/blog/how-we-do-hiring-and-hr-at-posthog", "destination": "/handbook/people/hiring-process" },
         { "source": "/api", "destination": "/docs/api" },
@@ -1211,7 +1223,8 @@
         { "source": "/handbook/small-teams/feature-success", "destination": "/teams/feature-success" },
         { "source": "/handbook/small-teams/customer-success", "destination": "/teams/customer-success" },
         { "source": "/handbook/small-teams/growth", "destination": "/teams/growth" },
-        { "source": "/handbook/small-teams/data-warehouse", "destination": "/teams/data-warehouse" },
+        { "source": "/handbook/small-teams/data-warehouse", "destination": "/teams/data-stack" },
+        { "source": "/teams/data-warehouse", "destination": "/teams/data-stack" },
         { "source": "/handbook/small-teams/infrastructure", "destination": "/teams/infrastructure" },
         { "source": "/handbook/small-teams/pipeline", "destination": "/teams/pipeline" },
         { "source": "/handbook/small-teams/web-analytics", "destination": "/teams/web-analytics" },
@@ -1283,6 +1296,7 @@
         { "source": "/docs/cdp/route-censor", "destination": "/docs/cdp" },
         { "source": "/docs/cdp/semver-flattener", "destination": "/docs/cdp" },
         { "source": "/docs/experiments/experiment-significance", "destination": "/docs/experiments/statistics" },
+        { "source": "/docs/experiments/frequentist-method", "destination": "/docs/experiments/statistics-frequentist" },
         { "source": "/handbook/product/in-app-prompts", "destination": "/docs/surveys" },
         { "source": "/docs/webhooks", "destination": "/docs/cdp/destinations" },
         { "source": "/docs/webhooks/slack", "destination": "/docs/cdp/destinations/slack" },
@@ -1297,12 +1311,12 @@
             "source": "/questions/automatically-merge-users",
             "destination": "/docs/product-analytics/identify#how-to-merge-users"
         },
-        { "source": "/docs/session-replay/android", "destination": "/docs/session-replay/installation?tab=Android" },
+        { "source": "/docs/session-replay/android", "destination": "/docs/session-replay/installation/android" },
         {
             "source": "/questions/how-to-get-current-user-identity",
             "destination": "/docs/product-analytics/identify#get-the-current-users-distinct-id"
         },
-        { "source": "/docs/session-replay/ios", "destination": "/docs/session-replay/installation?tab=iOS" },
+        { "source": "/docs/session-replay/ios", "destination": "/docs/session-replay/installation/ios" },
         {
             "source": "/questions/how-to-group-events",
             "destination": "/docs/product-analytics/troubleshooting#how-do-i-group-or-combine-events"
@@ -1321,10 +1335,10 @@
         },
         {
             "source": "/docs/session-replay/react-native",
-            "destination": "/docs/session-replay/installation?tab=React+Native"
+            "destination": "/docs/session-replay/installation/react-native"
         },
         { "source": "/teams/comms", "destination": "/teams/support" },
-        { "source": "/docs/session-replay/flutter", "destination": "/docs/session-replay/installation?tab=Flutter" },
+        { "source": "/docs/session-replay/flutter", "destination": "/docs/session-replay/installation/flutter" },
         { "source": "/teams/customer-comms", "destination": "/teams/support" },
         { "source": "/apps", "destination": "/cdp", "statusCode": 302 },
         { "source": "/docs/data-warehouse/setup/azure-blob", "destination": "/docs/cdp/sources/azure-blob" },
@@ -1365,6 +1379,8 @@
             "destination": "/handbook/content/tags-and-categories"
         },
         { "source": "/handbook/growth/marketing/components", "destination": "/handbook/content/components" },
+        { "source": "/handbook/content/writing-for-posthog", "destination": "/handbook/content" },
+        { "source": "/handbook/content/tags-and-categories", "destination": "/handbook/content/metadata" },
         { "source": "/handbook/growth/marketing/paid", "destination": "/handbook/brand/paid" },
         {
             "source": "/handbook/growth/marketing/value-propositions",
@@ -1466,7 +1482,11 @@
         },
         {
             "source": "/max-ai",
-            "destination": "/max"
+            "destination": "/ai"
+        },
+        {
+            "source": "/max",
+            "destination": "/ai"
         },
         {
             "source": "/docs/surveys/webhook",
@@ -1557,6 +1577,10 @@
             "destination": "/docs/error-tracking/issues-and-exceptions"
         },
         {
+            "source": "/docs/error-tracking/nextjs",
+            "destination": "/docs/error-tracking/installation/nextjs"
+        },
+        {
             "source": "/docs/ai-engineering/observability",
             "destination": "/docs/llm-analytics/start-here"
         },
@@ -1593,6 +1617,10 @@
             "destination": "/docs/llm-analytics/integrations/traceloop-posthog"
         },
         {
+            "source": "/docs/llm-analytics/manual-capture",
+            "destination": "/docs/llm-analytics/installation/manual-capture"
+        },
+        {
             "source": "/why",
             "destination": "/about"
         },
@@ -1612,10 +1640,44 @@
             "source": "/teams/exec",
             "destination": "/teams/blitzscale"
         },
-        { "source": "/teams/growth", "destination": "/teams" },
         { "source": "/eu", "destination": "/pricing" },
         { "source": "/pricing/philosophy", "destination": "/pricing#philosophy" },
-        { "source": "/handbook/brand/brand-and-vibes", "destination": "/handbook/brand/overview" }
+        { "source": "/handbook/brand/brand-and-vibes", "destination": "/handbook/brand/overview" },
+        { "source": "/teams/max-ai", "destination": "/teams/posthog-ai" },
+        {
+            "source": "/docs/max-ai",
+            "destination": "/docs/posthog-ai"
+        },
+        {
+            "source": "/docs/libraries/js/features",
+            "destination": "/docs/libraries/js/usage"
+        },
+        {
+            "source": "/handbook/engineering/on-call-rotation",
+            "destination": "/handbook/engineering/operations/on-call-rotation"
+        },
+        { "source": "/handbook/engineering/incidents", "destination": "/handbook/engineering/operations/incidents" },
+        {
+            "source": "/handbook/engineering/support-hero",
+            "destination": "/handbook/engineering/operations/support-hero"
+        },
+        { "source": "/handbook/who-we-are-building-for", "destination": "/handbook/who-we-build-for" },
+        { "source": "/example-components", "destination": "/handbook/engineering/posthog-com/markdown" },
+        { "source": "/handbook/content/components", "destination": "/handbook/engineering/posthog-com/markdown" },
+        { "source": "/handbook/engineering/storybook", "destination": "/handbook/engineering/posthog-com/markdown" },
+        {
+            "source": "/handbook/growth/sales/cross-sell-motions",
+            "destination": "/handbook/growth/cross-selling/cross-sell-motions"
+        },
+        {
+            "source": "/handbook/cs-and-onboarding/error-tracking-cross-sell",
+            "destination": "/handbook/growth/cross-selling/error-tracking-cross-sell"
+        },
+        {
+            "source": "/handbook/cs-and-onboarding/how-we-upsell-and-cross-sell",
+            "destination": "/handbook/growth/cross-selling/how-we-upsell-and-cross-sell"
+        },
+        { "source": "/startups/[...slug]", "destination": "/startups" }
     ],
     "headers": [
         {

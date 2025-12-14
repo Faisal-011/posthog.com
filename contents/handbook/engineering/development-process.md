@@ -248,11 +248,30 @@ We're managing deployments with [ArgoCD](http://go/argo) where you can also see 
 
 If you build it, [document it](/docs). You're in the best position to do this, and it forces you to think things through from a user perspective.
 
-It's not the responsibility of either [Brand & Vibes](/teams/brand) or [Content](/teams/content) teams to document features.
+It's not the responsibility of either <SmallTeam slug="brand" /> or <SmallTeam slug="content" /> teams to document features.
 
 See our [docs style guide](/handbook/content/posthog-style-guide) for tips on how to write great docs.
 
 ## Releasing
+
+There are a few different ways to release code here:
+
+* just release the code change directly
+    * when you have hign confidence the change is safe 
+* release it behind a flag and slowly roll it out
+    * when you don't need to run an AB test but want to be sure you can check the impact of the change 
+* release it behind a flag and roll it out on demand (we call this a closed beta)
+    * when you want to slowly release this to people who know they'll likely need to give feedback
+    * you know it isn't complete and you need early feedback 
+* release it behind a flag and run it with an AB experiment
+    * you don't know what impact it will have and want to measure it 
+* release it behind a flag and put it in a feature preview (we call this an open beta)
+    *  when you want to slowly release this to people who know they'll likely need to give feedback
+    * you know it isn't 100% and you need feedback
+* run old and new at the same time
+    * sometimes called the strangler fig https://martinfowler.com/bliki/StranglerFigApplication.html
+    * run both old and new and compare the output / effect
+    * you can then cut across (sometimes in stages) before removing the old code  
 
 ### Best practices for full releases
 

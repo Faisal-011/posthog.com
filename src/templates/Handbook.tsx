@@ -402,6 +402,7 @@ export default function Handbook({
                 hideRightSidebar={hideRightSidebar}
                 contentMaxWidthClass={contentMaxWidthClass}
                 markdownContent={contentWithSnippets}
+                sourceInstanceName={post.parent?.sourceInstanceName}
             />
         </>
     )
@@ -472,6 +473,19 @@ export const query = graphql`
                         }
                     }
                 }
+                templateConfigs {
+                    templateId
+                    inputs_schema {
+                        key
+                        type
+                        label
+                        required
+                        description
+                        default
+                    }
+                    name
+                    type
+                }
             }
             frontmatter {
                 tableOfContents {
@@ -530,6 +544,7 @@ export const query = graphql`
             }
             parent {
                 ... on File {
+                    sourceInstanceName
                     relativePath
                     fields {
                         gitLogLatestDate(formatString: "MMM DD, YYYY")
